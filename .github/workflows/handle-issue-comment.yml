@@ -12,8 +12,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Handle Issue Comment
-      #if: github.event.comment.body == 'I want it now'
-      uses: estrada9166/issue-assigner@v1
+      if: github.event.comment.body == 'I want to solve this issue'
+      uses: thollander/actions-comment-pull-request@master
       with:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-        WITH_COMMENTS: true
+        message: 'Thank you very much. Please fork this repository and raise the PR when ready.'
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}      

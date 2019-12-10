@@ -5,11 +5,13 @@ If you do not have an Ethereum wallet yet, open the Brave Browser visit brave://
 
 ## Contributer raises PR solving an issue claiming the Reward
 1. The owner creates an issue and gives it a price tag using the Coders Coin - e.g. 100 Coder Coins (CCN) - storing it in a rewards folder
-2. Contributor raises interest to solve an issue by writing a specific comment "I want it now"
-3. GitHub Action checks for "I want it now" and assign - if no one is assigned assigns the commenting user
+2. Contributor raises interest to solve an issue by writing a specific comment **I want to solve this issue**
+3. GitHub Action checks for "I want to solve this issue" and creates a comment saying **Thank you very much. Please fork this repository and raise the PR when ready.**
 4. Contributor raises PR
-5. Owner Merges PR 
-6. GitHub Action triggers transfer of reward amount in CCN from Owner to Contributor
+5. Owner should be notified
+6. Owner Merges PR 
+
+7. GitHub Action triggers transfer of reward amount in CCN from Owner to Contributor
 
 
 
