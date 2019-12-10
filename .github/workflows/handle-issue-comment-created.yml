@@ -1,0 +1,16 @@
+name: Handle Issue Comment
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Handle Issue Comment
+      if: github.event.comment.body == 'I want to solve this issue'
+        echo creating comment saying "Thank you very much. Please fork this repository and raise the PR when ready."

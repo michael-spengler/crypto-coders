@@ -10,7 +10,6 @@ If you do not have an Ethereum wallet yet, open the Brave Browser visit brave://
 4. Contributor raises PR
 5. Owner should be notified
 6. Owner Merges PR 
-
 7. GitHub Action triggers transfer of reward amount in CCN from Owner to Contributor
 
 
