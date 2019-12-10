@@ -1,4 +1,14 @@
 # Coin - ERC20
+## Contributer raises PR solving an issue claiming the Reward
+1. The owner creates an issue and gives it a price tag using the Crypto Coders Coin
+2. Contributor raises interest to solve an issue by writing a specific comment "I want it now"
+3. GitHub Action checks for "I want it now" and assign - if no one is assigned assigns the commenting user
+4. Contributor raises PR
+5. Owner Merges PR 
+6. GitHub Action triggers transfer of reward amount in CCN from Owner to Contributor
+
+
+
 
 ## Steps To Create our Coin
 
