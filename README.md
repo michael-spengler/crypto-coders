@@ -1,6 +1,10 @@
-# Coin - ERC20
+# Coder Coin - ERC20
+
+Prerequisite: Brave Browser
+If you do not have an Ethereum wallet yet, open the Brave Browser visit brave://wallet/ create a local wallet
+
 ## Contributer raises PR solving an issue claiming the Reward
-1. The owner creates an issue and gives it a price tag using the Crypto Coders Coin
+1. The owner creates an issue and gives it a price tag using the Coders Coin - e.g. 100 Coder Coins (CCN)
 2. Contributor raises interest to solve an issue by writing a specific comment "I want it now"
 3. GitHub Action checks for "I want it now" and assign - if no one is assigned assigns the commenting user
 4. Contributor raises PR
