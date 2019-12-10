@@ -1,8 +1,8 @@
 name: Handle Issue Comment
 
 on:
-  issue_comment:
-    types: [created]
+  issues:
+    types: [opened]
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Handle Issue Comment
-      if: github.event.comment.body == 'I want it now'
+      #if: github.event.comment.body == 'I want it now'
       uses: estrada9166/issue-assigner@v1
       with:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
