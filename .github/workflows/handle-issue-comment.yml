@@ -1,8 +1,6 @@
 name: Handle Issue Comment
 
-on:
-  issues:
-    types: [opened]
+on: [issue_comment]
 
 jobs:
   build:
