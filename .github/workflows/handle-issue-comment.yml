@@ -13,5 +13,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Handle Issue Comment
       if: github.event.comment.body == 'I want it now'
-      run: |
-        echo I will assign the commenting user
+    - uses: estrada9166/issue-assigner@v1
+      with:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        WITH_COMMENTS: true
