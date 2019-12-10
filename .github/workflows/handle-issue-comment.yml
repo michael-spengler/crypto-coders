@@ -12,6 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Handle Issue Comment
+      if: github.event.comment.body == 'I want it now'
       run: |
-        if: github.event.comment.body == 'I want it now'
         echo I will assign the commenting user
