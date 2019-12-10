@@ -4,7 +4,7 @@ Prerequisite: Brave Browser
 If you do not have an Ethereum wallet yet, open the Brave Browser visit brave://wallet/ create a local wallet
 
 ## Contributer raises PR solving an issue claiming the Reward
-1. The owner creates an issue and gives it a price tag using the Coders Coin - e.g. 100 Coder Coins (CCN) - storing it in a rewards folder
+1. The owner of a repository creates an issue and gives it a price tag using the Coders Coin - e.g. 100 Coder Coins (CCN) - storing it in a rewards folder
 2. Contributor raises interest to solve an issue by writing a specific comment **I want to solve this issue**
 3. GitHub Action checks for "I want to solve this issue" and creates a comment saying **Thank you very much. Please fork this repository and raise the PR when ready.**
 4. Contributor raises PR
@@ -61,3 +61,12 @@ Scenario 1: (one contributor signs the CLA for the first time - no duplicate)
 
 
 **On GitHub Actions Side**
+
+
+
+
+
+
+## Notes
+curl -i https://api.github.com/users/michael-spengler/repos
+

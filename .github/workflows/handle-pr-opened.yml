@@ -1,9 +1,7 @@
 name: Handle Pull Request Opened
-
 on:
   pull_request:
     types: [opened]
-
 jobs:
   build:
     runs-on: ubuntu-latest
