@@ -1,8 +1,8 @@
-name: Handle Pull Request Opened
+name: Handle Pull Request Merge
 
 on:
   pull_request:
-    types: [opened]
+    types: [closed]
 
 jobs:
   build:
