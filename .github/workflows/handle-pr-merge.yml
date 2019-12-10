@@ -8,4 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run a multi-line script
-      run: 'echo "payload: ${{ toJson(github) }}"'
+      run: 'echo "payload: ${{ toJson(github.event.merged) }}"'
