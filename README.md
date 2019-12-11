@@ -1,10 +1,28 @@
-# Coder Coin - ERC20
+# Storing CLA Signatures on Ethereum Blockchain
 
-Prerequisite: Brave Browser
+**On GitHub Actions Side**
+1. Contributor signs CLA by copy & pasting the text into a comment 
+2. GitHub Action checks whether the contributor's signature is already stored in the file which is specified in the CLA Workflow (= the local signature storage within the repository)
+3. If the contributor's signature is not present in the local signature storage the GitHub Action will store the signature
+4. If "Store To Blockchain" is active, GitHub Action calls a Post API which takes the values and stores them onto the Ethereum Blockchain 
+
+**On Blockchain Access Side**
+1. Post request is received and checked for consistency (call to GitHub API validating the data)
+2. If everything is fine store the signature on the Ethereum Blockchain
+
+
+
+# Rewards for Solved Issues 
+## Coder Coin - ERC20
+Smart Contract Adress: 0x3c008337493a835b1ebf70e0f4db8e1c7d570d47
+Link: https://etherscan.io/token/0x3c008337493a835b1ebf70e0f4db8e1c7d570d47
+
+
+Prerequisite for Receiving Code Coins: Brave Browser
 If you do not have an Ethereum wallet yet, open the Brave Browser visit brave://wallet/ create a local wallet
 
-## Contributer raises PR solving an issue claiming the Reward
-1. The owner of a repository creates an issue and gives it a price tag using the Coders Coin - e.g. 100 Coder Coins (CCN) - storing it in a rewards folder
+## Scenario
+1. The owner of a repository creates an issue and gives it a price tag - e.g. 100 Coder Coins (CC2) - storing it in a rewards folder
 2. Contributor raises interest to solve an issue by writing a specific comment **I want to solve this issue**
 3. GitHub Action checks for "I want to solve this issue" and creates a comment saying **Thank you very much. Please fork this repository and raise the PR when ready.**
 4. Contributor raises PR
@@ -14,6 +32,7 @@ If you do not have an Ethereum wallet yet, open the Brave Browser visit brave://
 
 
 
+# Background Info & Tutorials
 
 ## Steps To Create our Coin
 
@@ -36,37 +55,12 @@ contract CCToken2 is ERC20, ERC20Detailed {
 
 
 
-# Unique Assets - Non-fungible token - ERC721
+### Unique Assets - Non-fungible token - ERC721
 
 Ideas: data storage for one order
 
 
 
-# Data Storage for CLA signatures - Akshay
-
-Scenario 1: (one contributor signs the CLA for the first time - no duplicate)
-**On GitHub Actions Side**
-1. Contributor signs CLA by copy & pasting the text into comment 
-2. GitHub Action checks whether the contributor's signature is already stored in the file which is specified in the CLA Workflow (=the local signature storage within the repository)
-3. If the contributor's signature is not present in the local signature storage the GitHub Action will store the signature
-4. If "Store To Blockchain" is active, GitHub Action calls post API which takes the values and stores them onto the Ethereum Blockchain from where it could never be deleted. 
-
-**On Blockchain Access Side**
-1. Post request is received and checked for consistency (call to GitHub API validating the data)
-2. If everything is fine store it as ERC721 unique asset
-
-
-
-
-
-
-**On GitHub Actions Side**
-
-
-
-
-
-
-## Notes
+### Notes
 curl -i https://api.github.com/users/michael-spengler/repos
 
