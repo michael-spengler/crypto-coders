@@ -14,15 +14,15 @@
 
 # Rewards for Solved Issues 
 ## Coder Coin - ERC20
-Smart Contract Adress: 0x3c008337493a835b1ebf70e0f4db8e1c7d570d47
-Link: https://etherscan.io/token/0x3c008337493a835b1ebf70e0f4db8e1c7d570d47
+Smart Contract Adress: 0xb2259368b1691d49191C18571DE837911cB8597a
+Link: https://etherscan.io/token/0xb2259368b1691d49191C18571DE837911cB8597a
 
 
 Prerequisite for Receiving Code Coins: Brave Browser
 If you do not have an Ethereum wallet yet, open the Brave Browser visit brave://wallet/ create a local wallet
 
 ## Scenario
-1. The owner of a repository creates an issue and gives it a price tag - e.g. 100 Coder Coins (CC2) - storing it in a rewards folder
+1. The owner of a repository creates an issue and gives it a price tag - e.g. 100 Coder Coins (CC42) - storing it in a rewards folder
 2. Contributor raises interest to solve an issue by writing a specific comment **I want to solve this issue**
 3. GitHub Action checks for "I want to solve this issue" and creates a comment saying **Thank you very much. Please fork this repository and raise the PR when ready.**
 4. Contributor raises PR
@@ -52,6 +52,8 @@ contract CCToken2 is ERC20, ERC20Detailed {
 
 3. Install the compile plugin
 4. Install the deploy plugin
+5. compile
+6. before clicking "deploy" select "Injected Web3" as Environment
 
 
 
