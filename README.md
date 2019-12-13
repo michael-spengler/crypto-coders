@@ -1,5 +1,5 @@
-# Storing CLA Signatures on Ethereum Blockchain
-
+# Storing CLA Signatures on Ethereum Blockchain 
+ 
 **On GitHub Actions Side**
 1. Contributor signs CLA by copy & pasting the text into a comment 
 2. GitHub Action checks whether the contributor's signature is already stored in the file which is specified in the CLA Workflow (= the local signature storage within the repository)
