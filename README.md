@@ -1,4 +1,4 @@
-# Storing CLA Signatures on Ethereum Blockchain
+# Storing CLA Signatures on Ethereum Blockchain 
 
 **On GitHub Actions Side**
 1. Contributor signs CLA by copy & pasting the text into a comment 
